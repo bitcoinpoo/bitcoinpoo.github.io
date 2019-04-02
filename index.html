@@ -59,7 +59,7 @@
             </div>
             <div class="dh2"><i>He's afraid of missing out on the Bitcoin bubble!</i></div>
             <div>Send him some Bitcoins to make him happy</div>
-            <div><a id="address" class="clip" data-clipboard-target="#address">1JH3jvsVVapnUHvryTr27yuViiSqvVqdfP</a> <i class="fa fa-clipboard clip" aria-hidden="true" data-clipboard-target="#address"></i></div>
+            <div><a id="address" class="clip" data-clipboard-target="#address">1KLNXhB6pFhTSbm8qv3a2YZjyWpTVqDAbK</a> <i class="fa fa-clipboard clip" aria-hidden="true" data-clipboard-target="#address"></i></div>
             <div class="qr"><img src="pooqr.png"/></div>
             <div class="dbalance">Current balance: <span class="balance"><img src="btc-sans.png" alt="BTC" class="btc"/><span id="btbal">0.000000</span></span>
                 <div class="dgoals">
@@ -75,7 +75,7 @@
              $(function () {
                  $('[data-toggle="tooltip"]').tooltip();
                  new Clipboard('.clip');
-                 $.get( "https://blockchain.info/q/addressbalance/1JH3jvsVVapnUHvryTr27yuViiSqvVqdfP?confirmations=3"                    , function( data ) {
+                 $.get( "https://blockchain.info/q/addressbalance/1KLNXhB6pFhTSbm8qv3a2YZjyWpTVqDAbK?confirmations=3"                    , function( data ) {
                           $( "#btbal" ).html( parseFloat(data / 100000000).toFixed(8));
                       });
              })
